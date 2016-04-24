@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mocs", "mocs.vcproj", "{E8570E1E-373F-6769-673C-3A0CDFCC7FC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stopwatch", "stopwatch.vcproj", "{19291A44-4B38-BBEA-B58C-10F41832B3E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E8570E1E-373F-6769-673C-3A0CDFCC7FC6} = {E8570E1E-373F-6769-673C-3A0CDFCC7FC6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19291A44-4B38-BBEA-B58C-10F41832B3E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19291A44-4B38-BBEA-B58C-10F41832B3E8}.Debug|Win32.Build.0 = Debug|Win32
+		{19291A44-4B38-BBEA-B58C-10F41832B3E8}.Release|Win32.ActiveCfg = Release|Win32
+		{19291A44-4B38-BBEA-B58C-10F41832B3E8}.Release|Win32.Build.0 = Release|Win32
+		{E8570E1E-373F-6769-673C-3A0CDFCC7FC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E8570E1E-373F-6769-673C-3A0CDFCC7FC6}.Debug|Win32.Build.0 = Debug|Win32
+		{E8570E1E-373F-6769-673C-3A0CDFCC7FC6}.Release|Win32.ActiveCfg = Release|Win32
+		{E8570E1E-373F-6769-673C-3A0CDFCC7FC6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
