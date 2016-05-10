@@ -22,7 +22,7 @@ class MainWindow : public QWidget {
  signals:
   void Start();
   void Restart();
-  void RequestInterrupt();
+  void RequestInterruption();
 
  private:
   QThread stopwatch_thread_;

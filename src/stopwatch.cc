@@ -34,7 +34,7 @@ void Stopwatch::Restart() {
   delete elapsed_timer_;
 }
 
-void Stopwatch::RequestInterrupt() {
+void Stopwatch::RequestInterruption() {
   mutex_.lock();
   interruption_requested_ = true;
   mutex_.unlock();

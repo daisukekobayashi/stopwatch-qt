@@ -12,7 +12,7 @@ class Stopwatch : public QObject {
  public slots:
   void Start();
   void Restart();
-  void RequestInterrupt();
+  void RequestInterruption();
 
  signals:
   void Elapsed(qint64 elapsed_msec);

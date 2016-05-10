@@ -35,8 +35,8 @@ MainWindow::MainWindow(QWidget* parent) : QWidget(parent) {
   connect(stop_button_, SIGNAL(clicked()), this, SLOT(OnStopButtonClicked()));
   connect(this, SIGNAL(Start()), stopwatch_, SLOT(Start()));
   connect(this, SIGNAL(Restart()), stopwatch_, SLOT(Restart()));
-  connect(this, SIGNAL(RequestInterrupt()), stopwatch_,
-          SLOT(RequestInterrupt()), Qt::DirectConnection);
+  connect(this, SIGNAL(RequestInterruption()), stopwatch_,
+          SLOT(RequestInterruption()), Qt::DirectConnection);
   connect(stopwatch_, SIGNAL(Elapsed(qint64)), this,
           SLOT(UpdateElapsedTime(qint64)));
 }
@@ -82,7 +82,7 @@ void MainWindow::OnStopButtonClicked() {
     start_button_->setEnabled(true);
     restart_button_->setEnabled(true);
     stop_button_->setEnabled(false);
-    emit RequestInterrupt();
+    emit RequestInterruption();
     stopwatch_thread_.quit();
   }
 }
